@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    #demo {
+        border: solid red;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    #tt {
+    	border : 1px solid blue;
+        text-align: center;
+    }
+
+    p {
+
+
+        color: blue;
+    }
+    #em{
+        font-size: 10px;
+    }
+    </style>
+    <title>exersice-2</title>
+</head>
+<div id="demo">
+</div>
+
+<body>
+    <script type="text/javascript" src="exersice2.json"></script>
+    <script>
+    for (var i = 0; i < obj.Employees.length; i++) {
+        document.getElementById('demo').innerHTML += ("<div id='tt'><p>" + obj.Employees[i].jobTitleName + "</p><p>" + obj.Employees[i].userId + "</p><p>" + obj.Employees[i].firstName + "</p></p>" + "<p>" + obj.Employees[i].lastName + "</p><p>" + obj.Employees[i].Salary + "</p><p id='em'>" + obj.Employees[i].emailAddress + "</p></div>");
+    }
+    </script>
+</body>
+
+</html>
